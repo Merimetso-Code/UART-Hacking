@@ -1,6 +1,6 @@
 # UART Hacking
 
-A universal asynchronous receiver transmitter (UART) is a computer hardware standard for asynchronous serial communication in which data is encoded in a serial format and tramitted at configuratbale speed. The following tools are aimed at the hardware Security Tester and a written in Python 3.8 and make use of a the PYSerial and dbus modules. Information on hardware hacking and information security courses can be found at merimetso.net.
+A universal asynchronous receiver transmitter (UART) is a computer hardware standard for asynchronous serial communication in which data is encoded in a serial format and tramitted at configurabale speed. The following tools are aimed at the hardware Security Tester and are written in Python 3.8 and make use of a the PYSerial and dbus modules. Information on hardware hacking and information security courses can be found at merimetso.net.
 ## Installation of pyserial module in Python 3.8
 We can install the pyserial module using PIP
 ```sh
@@ -34,7 +34,7 @@ The following are the tools that we can use when hacking a UART connection on a 
   - tcp_serial_redirect.py
 
 ## sbrute
-This is login bruteforing tool for UART. Most UART connected are used to login to an embedded system. This tool is designed to allow a user to brute forece that authentication process. The program has been developed by Merimetso.
+This is login bruteforing tool for UART. Most UART connected are used to login to an embedded system. This tool is designed to allow a user to brute force that authentication process. The program has been developed by Merimetso.
 ```sh
 $ python sbrute.py -h
 usage: sbrute.py [-h] [-d device] [-b baudrate] [-U username] [-f passwordfile]
@@ -111,9 +111,9 @@ diagnostics:
   --develop             show Python traceback on error
 $
 ```
-Further information on this tool can be located in the PYSerial module documemtation.  https://pyserial.readthedocs.io/en/latest/examples.html
+Further information on this tool can be located in the PYSerial module documentation.  https://pyserial.readthedocs.io/en/latest/examples.html
 ## sscript
-This is the UART script execution engine. Once you know a username and a password for a UART connection then you can start executing command on the embedded system. To do this you can use miniterm and enter the commands at the keyboard, or you can place them all in a file (like a batch job) and then get the contents of the file executed.
+This is the UART script execution engine. Once you know a username and a password for a UART connection then you can start executing commands on the embedded system. To do this you can use miniterm and enter the commands at the keyboard, or you can place them all in a file (like a batch job) and then get the contents of the file executed.
 
 So if we look at the contents of batch.txt we can see a set of UNIX commands.
 ```sh
@@ -173,9 +173,9 @@ optional arguments:
   -v, --verbose         print more diagnostic messages (option can be given multiple times)
 $
 ```
-Further information on this tool can be located in the PYSerial module documemtation.  https://pyserial.readthedocs.io/en/latest/examples.html
+Further information on this tool can be located in the PYSerial module documentation.  https://pyserial.readthedocs.io/en/latest/examples.html
 ## port_publisher
-This example implements a TCP/IP to serial port service that works with multiple ports at once. It uses select, no threads, for the serial ports and the network sockets and therefore runs on POSIX systems only. 
+This example implements a TCP/IP to serial port service that works with multiple ports at once. It uses select, not threads, for the serial ports and the network sockets and therefore runs on POSIX systems only. 
 ```sh
 $ python port_publisher.py -h
 usage: port_publisher.py [options]
@@ -206,7 +206,7 @@ diagnostics:
   -v, --verbose         increase diagnostic messages
 $
 ```
-Further information on this tool can be located in the PYSerial module documemtation.  https://pyserial.readthedocs.io/en/latest/examples.html
+Further information on this tool can be located in the PYSerial module documentation.  https://pyserial.readthedocs.io/en/latest/examples.html
 ## tcp_serial_redirect
 This program opens a TCP/IP port. When a connection is made to that port (e.g. with telnet) it forwards all data to the serial port and vice versa. This program only exports a raw socket connection.
 ```sh
@@ -242,6 +242,6 @@ Options and arguments (and corresponding environment variables):
 -x     : skip first line of source, allowing use of non-Unix forms of #!cmd
 $
 ```
-Further information on this tool can be located in the PYSerial module documemtation.  https://pyserial.readthedocs.io/en/latest/examples.html
+Further information on this tool can be located in the PYSerial module documentation.  https://pyserial.readthedocs.io/en/latest/examples.html
 ## License
   - MIT
